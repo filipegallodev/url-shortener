@@ -20,10 +20,17 @@
   border: none;
   border-radius: 8px;
   font-size: 1.125rem;
+  transition: 0.3s;
 }
 
-.form-container input:focus {
+.form-container input:focus,
+input:hover {
   outline: none;
+  background-color: #f1f1fa;
+}
+
+.valid-input-required {
+  border: 3px solid #f33 !important;
 }
 
 .shorten-button,
@@ -41,11 +48,16 @@
 
 .shorten-button:hover,
 .copy-button:hover {
-  background-color: #1fb8b8;
+  background-color: #7deeee;
 }
 
 .copy-button {
   font-size: 1rem;
+}
+
+.copyed {
+  background-color: #064b4b !important;
+  color: #fff !important;
 }
 
 .url-element {

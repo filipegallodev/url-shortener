@@ -8,9 +8,11 @@ export function copyUrl() {
     navigator.clipboard.writeText(urlToCopy);
 
     copyButton.innerHTML = "Copiado!";
+    copyButton.classList.toggle("copyed");
     setTimeout(() => {
       copyButton.innerHTML = "Copiar";
-    }, 2500);
+      copyButton.classList.toggle("copyed");
+    }, 3000);
   }
 
   copyUrlButtons.forEach((copyButton) => {
