@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.shorten-url-result {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shorten-url-result li {
+  background-color: #333;
+  padding: 12px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fcf;
+}
