@@ -1,5 +1,11 @@
 import { shortenUrl } from "./modules/shorten-url.js";
 
-const longUrl = "https://www.facebook.com/fgallo9";
+const shortenButton = document.querySelector(".shorten-button");
 
-shortenUrl(longUrl);
+shortenButton.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const longUrl = document.querySelector(".long-url").value;
+
+  shortenUrl(longUrl);
+});
