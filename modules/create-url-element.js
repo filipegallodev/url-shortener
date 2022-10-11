@@ -1,23 +1,35 @@
 import { copyUrl } from "./copy-url.js";
 
-export function createUrlElement(shortUrl, fullShortLink) {
+export function createUrlElement(longUrl, data) {
   const shortenUrlList = document.querySelector(".shorten-url-result");
 
   const urlListElement = document.createElement("li");
   const elementContent = document.createElement("div");
+  elementContent.classList.add("url-element");
   urlListElement.appendChild(elementContent);
 
-  const urlLink = document.createElement("a");
-  urlLink.innerHTML = shortUrl;
-  urlLink.href = fullShortLink;
-  urlLink.rel = "external";
-  urlLink.target = "_blank";
-  elementContent.appendChild(urlLink);
+  const originalUrl = document.createElement("div");
+  elementContent.appendChild(originalUrl);
+
+  const longUrlLink = document.createElement("p");
+  longUrlLink.innerHTML = longUrl;
+  originalUrl.appendChild(longUrlLink);
+
+  const shortUrlAndCopyButton = document.createElement("div");
+  shortUrlAndCopyButton.classList.add("short-url-container");
+  elementContent.appendChild(shortUrlAndCopyButton);
+
+  const shortUrlLink = document.createElement("a");
+  shortUrlLink.innerHTML = data.short_link;
+  shortUrlLink.href = data.full_short_link;
+  shortUrlLink.rel = "external";
+  shortUrlLink.target = "_blank";
+  shortUrlAndCopyButton.appendChild(shortUrlLink);
 
   const urlCopyButton = document.createElement("button");
   urlCopyButton.innerText = "Copiar";
   urlCopyButton.classList.add("copy-button");
-  elementContent.appendChild(urlCopyButton);
+  shortUrlAndCopyButton.appendChild(urlCopyButton);
 
   shortenUrlList.appendChild(urlListElement);
 

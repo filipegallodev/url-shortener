@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
 
-    <title>Frontend Mentor | Encurtador de URL</title>
+    <title>Encurtador de URL</title>
   </head>
   <body>
     <main>
-      <div>
+      <div class="url-content-container">
         <div>
           <form>
-            <input class="long-url" type="text" required />
-            <button class="shorten-button">Encurtar URL!</button>
+            <div class="form-container">
+              <input
+                class="long-url"
+                type="text"
+                placeholder="Insira a URL que deseja encurtar..."
+                required
+              />
+              <button class="shorten-button">Encurtar!</button>
+            </div>
           </form>
         </div>
         <div>
