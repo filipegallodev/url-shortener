@@ -5,7 +5,7 @@ export async function shortenUrl(longUrl) {
     .then((response) => response.json())
     .then((data) => {
       if (data.ok) {
-        return createUrlElement(longUrl, data.result);
+        return createUrlElement(longUrl, data.result.short_link);
       }
       return errorHandler(data);
     });

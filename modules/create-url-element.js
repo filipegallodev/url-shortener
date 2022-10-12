@@ -1,4 +1,5 @@
 import { copyUrl } from "./copy-url.js";
+import { saveAllShortenedUrls } from "./localstorage.js";
 
 export function createUrlElement(longUrl, data) {
   const shortenUrlList = document.querySelector(".shorten-url-result");
@@ -20,8 +21,8 @@ export function createUrlElement(longUrl, data) {
   elementContent.appendChild(shortUrlAndCopyButton);
 
   const shortUrlLink = document.createElement("a");
-  shortUrlLink.innerHTML = data.short_link;
-  shortUrlLink.href = data.full_short_link;
+  shortUrlLink.innerHTML = data;
+  shortUrlLink.href = `https://${data}`;
   shortUrlLink.rel = "external";
   shortUrlLink.target = "_blank";
   shortUrlAndCopyButton.appendChild(shortUrlLink);
@@ -33,5 +34,6 @@ export function createUrlElement(longUrl, data) {
 
   shortenUrlList.appendChild(urlListElement);
 
+  saveAllShortenedUrls();
   copyUrl();
 }

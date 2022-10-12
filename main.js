@@ -1,3 +1,4 @@
+import { loadAllShortenedUrls } from "./modules/localstorage.js";
 import { shortenUrl } from "./modules/shorten-url.js";
 import { verifyExistingUrl } from "./modules/verify-existing-url.js";
 
@@ -14,3 +15,5 @@ shortenButton.addEventListener("click", (event) => {
   }
   longUrl.value = "";
 });
+
+loadAllShortenedUrls();
