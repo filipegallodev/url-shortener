@@ -1,3 +1,4 @@
 # Encurtador de URL
 
-> Mais informações em breve...
+## Objetivo
+Criar uma aplicação WEB que encurta URL.
