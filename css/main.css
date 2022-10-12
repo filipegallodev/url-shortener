@@ -33,6 +33,10 @@ input:hover {
   border: 3px solid #f33 !important;
 }
 
+.valid-input-required::placeholder {
+  color: #f99;
+}
+
 .shorten-button,
 .copy-button {
   padding: 12px 32px;
@@ -64,11 +68,16 @@ input:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 12px 0;
   border-radius: 8px;
   background-color: #fff;
   padding: 16px 28px;
   box-shadow: 0px 0px 8px #ccd;
+}
+
+.url-element p {
+  color: #444;
 }
 
 .url-element a {
@@ -86,6 +95,7 @@ input:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 28px;
 }
 
@@ -99,4 +109,50 @@ body,
 .form-container input,
 .shorten-button {
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 1250px) {
+  body {
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .url-element {
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .url-element div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .url-element p {
+    font-size: 0.75rem;
+  }
+
+  .short-url-container {
+    gap: 12px;
+  }
+
+  .copy-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 668px) {
+  .form-container {
+    flex-wrap: wrap;
+    padding: 16px 24px;
+  }
+
+  .shorten-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 358px) {
 }

@@ -17,3 +17,11 @@ shortenButton.addEventListener("click", (event) => {
 });
 
 loadAllShortenedUrls();
+
+const userScreen = window.outerWidth;
+
+if (userScreen <= 420) {
+  const inputPlaceholder = document
+    .querySelector(".form-container input")
+    .setAttribute("placeholder", "Insira a URL...");
+}
