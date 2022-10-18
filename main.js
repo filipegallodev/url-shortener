@@ -20,8 +20,8 @@ loadAllShortenedUrls();
 
 const userScreen = window.outerWidth;
 
-if (userScreen <= 420) {
-  const inputPlaceholder = document
+if (userScreen <= 500) {
+  document
     .querySelector(".form-container input")
-    .setAttribute("placeholder", "Insira a URL...");
+    .setAttribute("placeholder", "www.exemplo.com.br/link/grande");
 }

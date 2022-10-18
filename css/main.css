@@ -2,6 +2,43 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.header-title-container {
+  background-color: #3b3054;
+  width: 100%;
+  padding: 32px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px #335;
+}
+
+.header-title-container h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #00fdfd;
+  line-height: 3rem;
+}
+
+.header-description-container img {
+  width: 75%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px #aab;
+}
+
+.header-description-container p {
+  font-size: 1.25rem;
+  color: #666;
+  line-height: 1.5rem;
+  margin: 40px 0 20px;
+  font-weight: 500;
+}
+
 .form-container {
   display: flex;
   align-items: center;
@@ -10,7 +47,7 @@
   margin-top: 16px;
   border-radius: 8px;
   padding: 48px 64px;
-  box-shadow: 0px 0px 8px #aac;
+  box-shadow: 0px 0px 8px #aab;
   gap: 16px;
 }
 
@@ -73,7 +110,7 @@ input:hover {
   border-radius: 8px;
   background-color: #fff;
   padding: 16px 28px;
-  box-shadow: 0px 0px 8px #ccd;
+  box-shadow: 0px 0px 8px #aab;
 }
 
 .url-element p {
@@ -99,10 +136,39 @@ input:hover {
   gap: 28px;
 }
 
-body {
+.footer-container {
+  background-color: #3b3054;
+  /* background by SVGBackgrounds.com */
+  padding: 54px;
+  box-shadow: 0px 0px 15px #00000090;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-top: 100px;
+}
+
+.footer-container p {
+  color: #eee;
+}
+
+.footer-container a {
+  color: #36dbdb;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.footer-container a:hover {
+  color: #73ffff;
+}
+
+.url-content-container,
+.header-description-container {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #eef;
+}
+
+body {
+  background-color: #eefeff;
 }
 
 body,
@@ -112,7 +178,8 @@ body,
 }
 
 @media (max-width: 1250px) {
-  body {
+  .url-content-container,
+  .header-description-container {
     margin: 0 12px;
   }
 }
@@ -154,5 +221,8 @@ body,
   }
 }
 
-@media (max-width: 358px) {
+@media (max-width: 500px) {
+  .header-container img {
+    width: 100%;
+  }
 }
