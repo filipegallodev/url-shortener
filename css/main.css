@@ -105,16 +105,19 @@ input:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 24px;
   flex-wrap: wrap;
-  margin: 12px 0;
+  margin: 16px 0;
   border-radius: 8px;
   background-color: #fff;
-  padding: 16px 28px;
+  padding: 24px 28px;
   box-shadow: 0px 0px 8px #aab;
 }
 
 .url-element p {
   color: #444;
+  overflow-wrap: break-word;
 }
 
 .url-element a {
@@ -198,7 +201,7 @@ body,
 
 @media (max-width: 800px) {
   .url-element p {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 
   .short-url-container {
