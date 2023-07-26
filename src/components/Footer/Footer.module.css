@@ -1,0 +1,15 @@
+.footer {
+  background-color: #111;
+  padding: 48px;
+}
+
+.text {
+  font-size: 1.35rem;
+  color: #fff;
+  text-align: center;
+}
+
+.link {
+  font-weight: 600;
+  color: #5088ff;
+}
