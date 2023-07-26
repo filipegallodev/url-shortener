@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <h1 className={styles.title}>URL Shortner</h1>
+        <h1 className={styles.title}>URL Shortener</h1>
       </div>
     </header>
   );
