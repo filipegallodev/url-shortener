@@ -1,0 +1,15 @@
+.section {
+  max-width: 1000px;
+  margin: 48px auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1220px) {
+  .section {
+    margin: 48px 24px;
+  }
+}
