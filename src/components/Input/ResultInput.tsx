@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Input.module.css";
 
 const ResultInput = ({ shortenedURL }: { shortenedURL: string }) => {
-  function copyShortenedURLToClipboard() {}
+  const [copied, setCopied] = useState<boolean>(false);
+
+  function copyShortenedURLToClipboard() {
+    navigator.clipboard.writeText(shortenedURL);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2500);
+  }
 
   return (
     <div className={styles.container}>
@@ -13,8 +21,12 @@ const ResultInput = ({ shortenedURL }: { shortenedURL: string }) => {
         value={shortenedURL}
         disabled
       />
-      <button className={styles.button} onClick={copyShortenedURLToClipboard}>
-        Copiar URL
+      <button
+        className={styles.button}
+        onClick={copyShortenedURLToClipboard}
+        disabled={copied || !shortenedURL}
+      >
+        {copied ? "URL copiada!" : "Copiar URL"}
       </button>
     </div>
   );

@@ -16,6 +16,7 @@
 
 .input:disabled {
   background-color: rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.15);
 }
 
 .input:enabled:not(.input:focus):hover {
@@ -42,6 +43,12 @@
 .button:hover {
   background-color: #0641c0;
   border: 2px solid #0641c0;
+}
+
+.button:disabled {
+  background-color: #03205e;
+  border: 2px solid #03205e;
+  cursor: default;
 }
 
 @media (max-width: 700px) {
