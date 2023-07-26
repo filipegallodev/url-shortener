@@ -7,6 +7,8 @@ import ShortenInput from "@/components/Input/ShortenInput";
 import ResultInput from "@/components/Input/ResultInput";
 import styles from "./page.module.css";
 import Footer from "@/components/Footer/Footer";
+import Image from "next/image";
+import coverImg from "@/../public/image.png";
 
 export default function Home() {
   const [shortenedURL, setShortenedURL] = useState<string>("");
@@ -16,6 +18,13 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <div>
+          <div className={styles.imageContainer}>
+            <Image
+              className={styles.image}
+              src={coverImg}
+              alt="URL Shortener"
+            />
+          </div>
           <Section>
             <SectionTitle>
               Basta colocar o link que desejar encurtar logo abaixo!
