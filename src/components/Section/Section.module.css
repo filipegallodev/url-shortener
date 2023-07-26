@@ -15,4 +15,7 @@
   .section {
     margin: 48px 24px;
   }
+  .title {
+    font-size: 1.75rem;
+  }
 }
