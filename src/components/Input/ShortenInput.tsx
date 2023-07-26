@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Input.module.css";
-import fetchURL from "@/helper/fetchUrl";
+import fetchURL from "@/helper/fetchURL";
 
 const Input = ({
   setShortenedURL,
