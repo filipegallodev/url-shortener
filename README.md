@@ -1,24 +1,23 @@
-# 🔗 Encurtador de URL (Em atualização)
+# 🔗 URL Shortener - encurtador de links
 
-![Encurtador de URL Cover](https://i.imgur.com/NGLyRoM.png)
+![Capa do Projeto](https://i.imgur.com/8c6oSJh.png)
 
-## 🎯 Objetivo
+## 📄 Descrição
 
-Criação de uma aplicação WEB para que a pessoa consiga encurtar links que sejam grandes demais.
+Aplicação WEB de um encurtador de links.
 
 ## ⚙️ Funcionalidades
 
 - Encurtar links
-- Armazenamento de links já encurtados
 
 ## 🔗 Link para teste
 
-https://encurtador-de-links-fg.vercel.app/
+https://url-shortener-fg.vercel.app/
 
 ## 🛠 Tecnologias
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- ![Next.js](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## Status: Em atualização
+## Status: Finalizado ✅
