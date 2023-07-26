@@ -19,9 +19,3 @@
   color: #fff;
   text-align: center;
 }
-
-@media (max-width: 1220px) {
-  .container {
-    margin: 0 24px;
-  }
-}
